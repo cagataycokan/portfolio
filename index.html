@@ -4,13 +4,46 @@
   <meta charset="UTF-8">
   <title>Çağatay Portfolio</title>
   <style>
-    body { font-family: Arial; text-align: center; margin-top: 50px; }
-    h1 { color: #4A90E2; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #4A90E2, #9013FE);
+      color: white;
+    }
+    header { text-align: center; padding: 50px 20px; }
+    h1 { margin: 0; font-size: 3em; }
+    h2 { margin-top: 10px; font-weight: normal; }
+    section { max-width: 800px; margin: 50px auto; padding: 0 20px; }
+    a { color: #FFD700; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .project { background: rgba(0,0,0,0.3); padding: 20px; margin-bottom: 20px; border-radius: 10px; }
   </style>
 </head>
 <body>
-  <h1>Merhaba, Ben Çağatay</h1>
-  <p>Cloud & DevOps Engineer | AWS Enthusiast</p>
-  <p><a href="https://github.com/cagataycokan">GitHub Repo’larım</a></p>
+  <header>
+    <h1>Hello, I'm Çağatay</h1>
+    <h2>Cloud & DevOps Engineer | AWS Enthusiast</h2>
+    <p><a href="https://github.com/cagataycokan">GitHub Repo’larım</a></p>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>AWS SysOps Automation</h3>
+      <p>EC2, S3, CloudWatch kullanarak otomasyon ve monitoring projeleri geliştirdim.</p>
+      <a href="https://github.com/cagataycokan/aws-sysops-project">Repoyu Gör</a>
+    </div>
+
+    <div class="project">
+      <h3>CloudOps Infrastructure</h3>
+      <p>AWS CloudFormation ve Terraform kullanarak altyapı yönetimi ve deploy projeleri.</p>
+      <a href="https://github.com/cagataycokan/cloudops-infra">Repoyu Gör</a>
+    </div>
+    
+    <!-- Yeni projeler buraya eklenebilir -->
+  </section>
+
 </body>
 </html>
