@@ -5,7 +5,7 @@
   <title>Çağatay Çokan Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
       background: #1e1e2f;
@@ -19,72 +19,92 @@
     }
     header h1 { margin: 0; font-size: 3em; }
     header h2 { margin-top: 10px; font-weight: normal; color: #ccc; }
-    section { max-width: 800px; margin: 50px auto; padding: 0 20px; }
-    h2.section-title { border-bottom: 2px solid #4A90E2; padding-bottom: 5px; }
-    ul { list-style: none; padding: 0; }
-    li { margin-bottom: 15px; }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+    }
+    h2.section-title {
+      border-bottom: 2px solid #4A90E2;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    li {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
     a {
-      color: #4A90E2;
+      color: #FFD700;
       text-decoration: none;
       font-weight: bold;
+      display: block;
     }
-    a:hover { text-decoration: underline; }
+
+    a:hover {
+      color: #00FFFF;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      header h2 { font-size: 1em; }
+      li { padding: 15px; }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Çağatay Çokan | CloudOps & AWS SysOps Portfolio</h1>
-    <h2>Hands-on AWS SysOps and CloudOps projects showcasing my experience in system automation, monitoring, and cloud infrastructure management.</h2>
-  </header>
 
-  <section>
-    <h2 class="section-title">Certificates</h2>
-    <ul>
-      <li><a href="https://drive.google.com/file/d/1HmZS2IvbtxlO9Euhsd5hpip3dW_lSOOi/view" target="_blank">AWS Certified Cloud Practitioner certificate</a></li>
-      <li><a href="https://drive.google.com/file/d/1niifGEqTZ1gtOQQcnr59hZXZ2lZDYZOi/view" target="_blank">Attacking and Defending AWS</a></li>
-      <li><a href="https://drive.google.com/file/d/1K9QepeCt_ttRh_P6VFweoEo4Agr2kR8g/view" target="_blank">IELTS(International English Language Testing System) Certificate</a></li>
-      <!-- Yeni sertifikalar buraya eklenebilir -->
-    </ul>
-  </section>
+<header>
+  <h1>Çağatay Çokan</h1>
+  <h2>CloudOps & AWS SysOps Portfolio</h2>
+  <p>Hands-on AWS SysOps and CloudOps projects showcasing my experience in system automation, monitoring, and cloud infrastructure management.</p>
+</header>
 
-  <section>
-    <h2 class="section-title">Projects</h2>
-    <ul>
-      <li><a href="https://drive.google.com/file/d/1Hgk0CvSeIV3ZKt7Y4bsFxYCzMl6rgzMH/view" target="_blank">Launch a Kubernetes Cluster - EKS 1</a></li>
-      <li><a href="https://drive.google.com/file/d/16vbqZBJGGKzNHt8lhrPZ9adOla_OqBQG/view" target="_blank">Set Up Kubernetes Deployment - EKS 2</a></li>
-      <li><a href="https://drive.google.com/file/d/1z_obc1NOGSXRyH64GpbL-BMgnrPdNHfr/view" target="_blank">Create Kubernetes Manifests - EKS 3</a></li>
-      <li><a href="https://drive.google.com/file/d/184H-u-qaAg_VEYwgkAUALYb5UUk_JHe6/view" target="_blank">Deploy Backend with Kubernetes - EKS 4</a></li>
-      <li><a href="https://drive.google.com/file/d/1Bdm4NIFab65Rt8xdNY3tuR0Nw_xaVL0G/view" target="_blank">Create S3 Buckets with Terraform</a></li>
-      <li><a href="https://drive.google.com/file/d/1DnEJlHzTOiIDx1dybwUwKoVHbdGdMJhL/view" target="_blank">Build a Security Monitoring System</a></li>
-      <li><a href="https://drive.google.com/file/d/1XroqX9Dy1zDJElq09_qc4zw73dmsicHU/view" target="_blank">Secure Secrets with Secrets Manager</a></li>
-      <li><a href="https://drive.google.com/file/d/16MCA1OfCJjRWOtC7pdoap64j_-vOsovX/view" target="_blank">Connect a Web App to Amazon Aurora - Part 1</a></li>
-      <li><a href="https://drive.google.com/file/d/1ACGheIpCGocbAV8tasXO1a-5I_ryL34V/view" target="_blank">Connect a Web App to Amazon Aurora - Part 2</a></li>
-      <li><a href="https://drive.google.com/file/d/1K7hnlku8JkMqX6Xsq0CxKGjr4U9IzxDC/view" target="_blank">Threat Detection with GuardDuty</a></li>
-      <li><a href="https://drive.google.com/file/d/19rc9tiYpweymqPUUfD0ULlcPwMDq6Zn3/view" target="_blank">Encrypt Data with AWS KMS</a></li>
-      <li><a href="https://drive.google.com/file/d/1OOz_Az5m3gZRTArFtWlF-9mUmDi3WVlQ/view" target="_blank">Host a Website on Amazon S3</a></li>
-      <li><a href="https://drive.google.com/file/d/1dpbmivHcXB8dp7bds91K_CDxoY1Wb43L/view" target="_blank">Query Data with DynamoDB</a></li>
-      <li><a href="https://drive.google.com/file/d/172_TG-CGeLg_tJq4eGf3OVFRJMv3gXFZ/view" target="_blank">Load Data into a DynamoDB Table</a></li>
-      <li><a href="https://drive.google.com/file/d/1jPJv-jrVE_wIyIHO39echnmBDp2aPaVX/view" target="_blank">VPC Endpoints</a></li>
-      <li><a href="https://drive.google.com/file/d/1bMjvAq8C-EJRgtXPCobgX_bYzLLgCs56/view" target="_blank">Access S3 from a VPC</a></li>
-      <li><a href="https://drive.google.com/file/d/1pe1GrPixnHdSWbJ_PBQku7GFQ_mxbsW3/view" target="_blank">VPC Monitoring with Flow Logs</a></li>
-      <li><a href="https://drive.google.com/file/d/1_FQp4dWOImO8lOIM8hlyrwMzufFk4lNv/view" target="_blank">Testing VPC Connectivity</a></li>
-      <li><a href="https://drive.google.com/file/d/1vLN74dnPsinV8Bo1q1RjhVoL8SUegVRC/view" target="_blank">Launching VPC Resources</a></li>
-      <li><a href="https://drive.google.com/file/d/112GiYQxx_Ff1-WF6OfwuzKqxZIjdkp3z/view" target="_blank">Creating a Private Subnet</a></li>
-      <li><a href="https://drive.google.com/file/d/13mv2YpYq_NRZxYA_KBayCfG1K8-kU7e0/view" target="_blank">VPC Traffic Flow and Security</a></li>
-      <li><a href="https://drive.google.com/file/d/1unc7sX1Hcx-2e2nwSlO7U1tChi_8K5FF/view" target="_blank">Build a Virtual Private Cloud (VPC)</a></li>
-      <li><a href="https://drive.google.com/file/d/1mP7OEk9PmEnd3m9W2jEMVMLshJ91nYrw/view" target="_blank">Cloud Security with AWS IAM</a></li>
-      <li><a href="LINK" target="_blank">AÇIKLAMA</a></li>
-      <li><a href="LINK" target="_blank">AÇIKLAMA</a></li>
-      <li><a href="LINK" target="_blank">AÇIKLAMA</a></li>
-      <li><a href="LINK" target="_blank">AÇIKLAMA</a></li>
-      <li><a href="LINK" target="_blank">AÇIKLAMA</a></li>
-      <li><a href="LINK" target="_blank">AÇIKLAMA</a></li>
-      <li><a href="LINK" target="_blank">AÇIKLAMA</a></li>
-  
-      
-      <!-- Yeni projeler buraya eklenebilir -->
-    </ul>
-  </section>
+<section>
+  <h2 class="section-title">Certificates</h2>
+  <ul>
+    <li><a href="https://drive.google.com/file/d/1HmZS2IvbtxlO9Euhsd5hpip3dW_lSOOi/view" target="_blank">AWS Certified Cloud Practitioner certificate</a></li>
+    <li><a href="https://drive.google.com/file/d/1niifGEqTZ1gtOQQcnr59hZXZ2lZDYZOi/view" target="_blank">Attacking and Defending AWS</a></li>
+    <li><a href="https://drive.google.com/file/d/1K9QepeCt_ttRh_P6VFweoEo4Agr2kR8g/view" target="_blank">IELTS Certificate</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2 class="section-title">Projects</h2>
+  <ul>
+    <li><a href="https://drive.google.com/file/d/1Hgk0CvSeIV3ZKt7Y4bsFxYCzMl6rgzMH/view" target="_blank">Launch a Kubernetes Cluster - EKS 1</a></li>
+    <li><a href="https://drive.google.com/file/d/16vbqZBJGGKzNHt8lhrPZ9adOla_OqBQG/view" target="_blank">Set Up Kubernetes Deployment - EKS 2</a></li>
+    <li><a href="https://drive.google.com/file/d/1z_obc1NOGSXRyH64GpbL-BMgnrPdNHfr/view" target="_blank">Create Kubernetes Manifests - EKS 3</a></li>
+    <li><a href="https://drive.google.com/file/d/184H-u-qaAg_VEYwgkAUALYb5UUk_JHe6/view" target="_blank">Deploy Backend with Kubernetes - EKS 4</a></li>
+    <li><a href="https://drive.google.com/file/d/1Bdm4NIFab65Rt8xdNY3tuR0Nw_xaVL0G/view" target="_blank">Create S3 Buckets with Terraform</a></li>
+    <li><a href="https://drive.google.com/file/d/1DnEJlHzTOiIDx1dybwUwKoVHbdGdMJhL/view" target="_blank">Build a Security Monitoring System</a></li>
+    <li><a href="https://drive.google.com/file/d/1XroqX9Dy1zDJElq09_qc4zw73dmsicHU/view" target="_blank">Secure Secrets with Secrets Manager</a></li>
+    <li><a href="https://drive.google.com/file/d/16MCA1OfCJjRWOtC7pdoap64j_-vOsovX/view" target="_blank">Connect a Web App to Amazon Aurora - Part 1</a></li>
+    <li><a href="https://drive.google.com/file/d/1ACGheIpCGocbAV8tasXO1a-5I_ryL34V/view" target="_blank">Connect a Web App to Amazon Aurora - Part 2</a></li>
+    <li><a href="https://drive.google.com/file/d/1K7hnlku8JkMqX6Xsq0CxKGjr4U9IzxDC/view" target="_blank">Threat Detection with GuardDuty</a></li>
+    <!-- Yeni projeler buraya eklenebilir -->
+  </ul>
+</section>
 
 </body>
 </html>
